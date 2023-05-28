@@ -1,0 +1,25 @@
+.container__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  overflow-y: hidden;
+}
+.container__content-article {
+  display: flex;
+  width: 600px;
+  height: auto;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.titled {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 200px;
+}/*# sourceMappingURL=news.css.map */

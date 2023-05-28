@@ -10,7 +10,45 @@
 }
 
 body {
-  background: #000;
+  background: rgb(30, 20, 80);
+  background: radial-gradient(circle, rgb(30, 20, 80) 45%, rgb(0, 0, 0) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  background: #2a1c6f;
+  color: white;
+  font-family: Wix Madefor, sans-serif;
+  font-size: 16px;
+}
+button:hover {
+  cursor: pointer;
+  background: #3e2b9f;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  color: white;
+}
+
+.link {
+  font-family: Wix Madefor, sans-serif;
+  font-size: 18px;
+  color: white;
 }
 
 .list {
@@ -29,7 +67,7 @@ body {
   color: white;
 }
 
-.title h1 {
+.title {
   font-size: 50px;
 }
 
@@ -41,6 +79,9 @@ body {
 .logo-box {
   padding: 0px 10px;
 }
+.logo-box:hover {
+  cursor: pointer;
+}
 
 .container {
   display: block;
@@ -49,29 +90,32 @@ body {
 .container__header {
   position: sticky;
   top: 0;
+  right: inherit;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1E1450;
+  background-color: #1E1450;
 }
 .container__header-navigation {
   display: flex;
-  background: transparent;
   gap: 40px;
   align-items: center;
   align-self: center;
   margin-right: 30px;
 }
 .container__main {
+  min-height: 100vh;
   background-image: url("../components/images/panoram-port-photo-br.png");
   width: 100vw;
   height: 100vh;
+  overflow-y: hidden;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 9 10px 290px 0px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 150px 210px;
 }
 .container__main-content-article {
   width: 600px;
@@ -80,12 +124,61 @@ body {
   gap: 20px;
 }
 .container__section-content {
+  padding: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
 }
 .container__section-content-item {
   width: 600px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.container__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+.container__footer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container__footer-data {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 100px;
+  align-items: center;
+  gap: 150px;
+}
+.container__footer-data-left {
+  display: flex;
+}
+.container__footer-data-center {
+  display: flex;
+}
+
+.container__button-more {
+  align-self: flex-start;
+  padding: 20px 0px;
+}
+
+.info-pad {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-image {
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.submit-form {
+  align-self: center;
 }/*# sourceMappingURL=main.css.map */
