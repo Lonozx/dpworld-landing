@@ -74,6 +74,10 @@ input{
 .logo{
     width:500px;
     height: 100px;
+    @media (max-width:1110px) {
+        width: 400px;
+        height: 100px;
+    }
 }
 
 .logo-box{
@@ -96,19 +100,33 @@ input{
         justify-content: space-between;
         background-color: #1E1450;
         &-navigation{
+            @media (max-width: 675px) {
+                flex-direction:column;
+                position: absolute;
+                background: #1E1450;
+                width: 100%;
+                top: 75px;
+                left: 0;
+                transform: translateY(-100%);
+                z-index: -1;
+                transition: 0.6s;
+                padding: 0;
+            }
             display: flex;
             // background: transparent;
             gap: 40px;
             align-items: center;
             align-self: center;
             margin-right: 30px;
+            padding: 10px;
         }
     }
     &__main{
-        min-height: 100vh;
+        
         background-image: url('../components/images/panoram-port-photo-br.png');
         width: 100vw;
         height: 100vh;
+        min-width: auto;
         overflow-y: hidden;
         // filter: brightness(0.4);
         background-size: cover;
@@ -117,12 +135,27 @@ input{
         justify-content: flex-start;
         align-items: flex-start;
         padding: 150px 210px;
+        @media (max-width:830px) {
+            padding: 10px;
+            // max-width: 300px;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            overflow-y: hidden;
+        }
         // padding: 0px 910px 290px 0px;
         &-content-article{
             width: 600px;
             display: flex;
             flex-direction: column;
             gap: 20px;
+            @media (max-width:830px) {
+                padding: 10px;
+                max-width: 400px;
+                min-width: 200px;
+                height: auto;
+                overflow-y: hidden;
+            }
         }
     }
     &__section-content{
@@ -139,7 +172,7 @@ input{
             flex-direction: column;
             gap: 20px;
         }
-        @media (max-width:400px) {
+        @media (max-width:500px) {
             padding: 10px;
         }
     }
