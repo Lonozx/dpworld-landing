@@ -86,14 +86,28 @@ input{
         cursor: pointer;
     }
 }
+.burger{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span{
+    he: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+}
 
 .container{
     display: block;
-    position: relative;
+   
     &__header{
-        position: sticky;
-        top: 0;
-        right: inherit;
+        position: relative;
         width: 100%;
         display: flex;
         align-items: center;
@@ -164,7 +178,6 @@ input{
         justify-content: center;
         gap: 100px;
         flex-wrap: wrap;
-        
         &-item{
             width: 600px;
             min-width: 200px;
