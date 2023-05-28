@@ -131,11 +131,16 @@ input{
         justify-content: center;
         gap: 100px;
         flex-wrap: wrap;
+        
         &-item{
             width: 600px;
+            min-width: 200px;
             display: flex;
             flex-direction: column;
             gap: 20px;
+        }
+        @media (max-width:400px) {
+            padding: 10px;
         }
     }
     &__footer{

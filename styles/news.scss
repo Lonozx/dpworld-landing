@@ -9,7 +9,8 @@
     overflow-y: hidden;
     &-article{
         display: flex;
-        width: 600px;
+        max-width: 600px;
+        min-width: 200px;
         height: auto;
         flex-direction: column;
         gap: 20px;

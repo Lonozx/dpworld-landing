@@ -132,9 +132,15 @@ input {
 }
 .container__section-content-item {
   width: 600px;
+  min-width: 200px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 400px) {
+  .container__section-content {
+    padding: 10px;
+  }
 }
 .container__footer {
   display: flex;
