@@ -9,13 +9,100 @@
 }
 .container__content-article {
   display: flex;
-  max-width: 600px;
+  max-width: 800px;
   min-width: 200px;
   height: auto;
   flex-direction: column;
   gap: 20px;
   justify-content: flex-start;
   align-items: center;
+}
+.container__content-article-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+a.modal-open {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+}
+
+#popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(77, 77, 77, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+
+#popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#popup:target .popup-inner {
+  transform: scale(1);
+}
+
+.popup-inner {
+  position: relative;
+  background: #2a1c6f;
+  min-width: 500px;
+  padding: 25px;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+a.close-popup {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #150e38;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+.linked-modal {
+  width: 150px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
+  background: #2a1c6f;
+  color: white;
+  font-family: Wix Madefor, sans-serif;
+  font-size: 16px;
+}
+.linked-modal:hover {
+  cursor: pointer;
+  background: #3e2b9f;
 }
 
 .modal-window {
@@ -31,7 +118,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  gap: 20%;
 }
 
 .titled {
