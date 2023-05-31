@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    padding: 10px;
+    padding: 100px 10px ;
     overflow-y: hidden;
     &-article{
         display: flex;
@@ -19,11 +19,33 @@
     }
 }
 
+.modal-window{
+    display: flex;
+    justify-content: center;
+}
+
+.obtain{
+    width: 100%;
+    height: 200px;
+    background: #150e38;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
 .titled{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
-    padding: 200px;
+    width: 100%;
+    height: 400px;
+    @media (max-width: 675px) {
+        padding: 10px;
+    }
+    background: url('../components/images/bg-news.jpg');
+    background-size: cover;
 }
 
 
