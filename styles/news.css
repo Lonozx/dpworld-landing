@@ -89,6 +89,17 @@ a.close-popup {
   border-radius: 50%;
 }
 
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.linked {
+  background: #150e38;
+}
+
 .linked-modal {
   width: 150px;
   height: 40px;
