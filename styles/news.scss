@@ -46,6 +46,12 @@ color: #fff;
 text-decoration: none;
 }
 
+.mobile{
+   font-size: 27px;
+   padding: 10px;
+}
+
+
 #popup{
     position: fixed;
     width: 100%;
@@ -72,6 +78,9 @@ text-decoration: none;
     position: relative;
     background:#2a1c6f;
     min-width: 500px;
+    @media (max-width:1100px) {
+        min-width: 100%;
+    }
     padding: 25px;
     transform: scale(0);
     transition: all 0.5s ease;
