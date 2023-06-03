@@ -42,9 +42,11 @@ a.modal-open {
   text-decoration: none;
 }
 
-.mobile {
-  font-size: 27px;
-  padding: 10px;
+@media (max-width: 1100px) {
+  .mobile {
+    font-size: 27px;
+    padding: 10px;
+  }
 }
 
 #popup {
