@@ -142,13 +142,8 @@ a.close-popup {
   justify-content: center;
   align-items: center;
   gap: 20%;
+  overflow: hidden;
 }
-@media (max-width: 1100px) {
-  .obtain {
-    padding: 5px;
-  }
-}
-
 .titled {
   display: flex;
   justify-content: center;
@@ -159,7 +154,7 @@ a.close-popup {
   background: url("../components/images/bg-news.jpg");
   background-size: cover;
 }
-@media (max-width: 675px) {
+@media (max-width: 1100px) {
   .titled {
     padding: 10px;
   }
