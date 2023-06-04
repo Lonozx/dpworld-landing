@@ -4,6 +4,7 @@
     font-family: Wix Madefor;
     src: url('../fonts/WixMadeforText-Regular.ttf');
 }
+@import "../../dpworld-landing/node_modules/swiper/swiper-bundle.css";
 
 
 
@@ -116,7 +117,7 @@ input{
 .burger{
     // display: flex;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     align-items: center;
     justify-content: flex-end;
     width: 35px;
@@ -174,7 +175,7 @@ input{
                 top: 0;
                 background: #150e38;
                 flex-direction: column;
-                // z-index: 101;
+                z-index: 3;
                 padding: 100px 20px;
                 width: 100%;
                 left: -100%;
@@ -325,6 +326,7 @@ input{
 .article-image{
     max-width: 800px;
     max-height: 400px;
+    loading: lazy;
 }
 
 

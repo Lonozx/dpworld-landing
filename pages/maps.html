@@ -1,12 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maps</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/maps.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        .swiper {
+            width: 100%;
+            z-index: 0;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+        }
+
+    </style>
+
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="container">
+            <header class="container__header">
+                <div class="logo-box">
+                    <a href="../index.html"><img class="logo" src="../components/images/footerlogo.png" alt=""></a>
+                </div>
+
+                <ul class="container__header-navigation">
+                    <li class="list"><a class="text list" href="../pages/news.html">Новини</a></li>
+                    <li class="list"><a class="text list" href="./pages/maps.html">Карта</a></li>
+                    <li class="list"><a class="text list" href="#">Контакти</a></li>
+                    <li class="list"><a class="text list"
+                            href="https://ehpv.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?location=Ukraine&locationId=300000000275324&locationLevel=country&mode=location"
+                            target="_blank">Вакансії</a></li>
+                </ul>
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="titled title text">
+                Карта підприємства
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="image-sheet"
+                            src="../components/images/swiper-maps/swipe-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="image-sheet"
+                            src="../components/images/swiper-maps/swipe-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="image-sheet"
+                            src="../components/images/swiper-maps/swipe-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="image-sheet"
+                            src="../components/images/swiper-maps/swipe-4.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="image-sheet"
+                            src="../components/images/swiper-maps/swipe-5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="image-sheet"
+                            src="../components/images/swiper-maps/swipe-6.jpg" alt=""></div>
+                    
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+
+            </div>
+
+
+
+
+            <div class="container__maps">
+
+                <iframe class="maps-inner"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5618.7890396356!2d31.006035492554584!3d46.658990390622016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1685898077022!5m2!1sru!2sua"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container">
+            <footer class="container__footer">
+                <p class="text">Ви можете залишити контактну інформацію і ми з вами зв'яжемось!</p>
+                <form action="" class="container__footer-form">
+                    <input type="email" placeholder="Email...">
+                    <input type="text" placeholder="Ім'я...">
+                    <input type="number" placeholder="Номер телефону...">
+                    <button type="submit" class="submit-form">Будьте на зв'язку!</button>
+                </form>
+                <div class="container__footer-data">
+                    <div class="container__footer-data-left">
+                        <ul class="info-pad left-pad">
+                            <li>
+                                <a class="link" href="#">Контакти</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#">Карта порту</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://wheresmycontainer.co.uk/" target="_blank">Де мій груз</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container__footer-data-center">
+                        <ul class="info-pad center-pad">
+                            <li>
+                                <a class="link"
+                                    href="https://ehpv.fa.em2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?location=United+Kingdom&locationId=300000000273871&locationLevel=country">Вакансії</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#">Співпраця</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://wheresmycontainer.co.uk/" target="_blank">Чому саме
+                                    ми?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="container__footer-data-right">
+                        <ul class="info-pad right-pad">
+                            <li>
+                                <a class="link" href="#">Вакансії</a>
+                            </li>
+                            <li>
+                                <a class="link" href="#">Співпраця</a>
+                            </li>
+                            <li>
+                                <a class="link" href="https://wheresmycontainer.co.uk/" target="_blank">Чому саме
+                                    ми?</a>
+                            </li>
+                        </ul>
+                    </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../javascript/hamburger.js"></script>
+    <script src="../javascript/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
+        });
+    </script>
+
 </body>
+
 </html>
